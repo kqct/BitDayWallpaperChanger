@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0305DBCF205C456800C8149A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305DBCE205C456800C8149A /* AppDelegate.swift */; };
+		0305DBD1205C456800C8149A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0305DBD0205C456800C8149A /* Assets.xcassets */; };
+		0305DBD4205C456800C8149A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0305DBD2205C456800C8149A /* MainMenu.xib */; };
+		0325F3AE205CB8E8002DFF23 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325F3AD205CB8E8002DFF23 /* StatusMenuController.swift */; };
+		0325F3B0205CBDA4002DFF23 /* WallpaperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325F3AF205CBDA4002DFF23 /* WallpaperManager.swift */; };
+		0325F3B3205CCB6B002DFF23 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325F3B1205CCB6B002DFF23 /* PreferencesWindow.swift */; };
+		0325F3B4205CCB6B002DFF23 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0325F3B2205CCB6B002DFF23 /* PreferencesWindow.xib */; };
+		03412672206085A500FF8CE2 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03412671206085A500FF8CE2 /* SQLite.framework */; };
+		03412673206085A500FF8CE2 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03412671206085A500FF8CE2 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03412677206085DA00FF8CE2 /* SQLite.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03412676206085DA00FF8CE2 /* SQLite.framework.dSYM */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03412674206085A500FF8CE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03412673206085A500FF8CE2 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03412675206085C700FF8CE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				03412677206085DA00FF8CE2 /* SQLite.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0305DBCB205C456800C8149A /* BitDayWallpaperChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitDayWallpaperChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0305DBCE205C456800C8149A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0305DBD0205C456800C8149A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0305DBD3205C456800C8149A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0305DBD5205C456800C8149A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0305DBD6205C456800C8149A /* BitDayWallpaperChanger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BitDayWallpaperChanger.entitlements; sourceTree = "<group>"; };
+		0325F3AD205CB8E8002DFF23 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		0325F3AF205CBDA4002DFF23 /* WallpaperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperManager.swift; sourceTree = "<group>"; };
+		0325F3B1205CCB6B002DFF23 /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		0325F3B2205CCB6B002DFF23 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		03412671206085A500FF8CE2 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
+		03412676206085DA00FF8CE2 /* SQLite.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SQLite.framework.dSYM; path = Carthage/Build/Mac/SQLite.framework.dSYM; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0305DBC8205C456800C8149A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03412672206085A500FF8CE2 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0305DBC2205C456800C8149A = {
+			isa = PBXGroup;
+			children = (
+				03412676206085DA00FF8CE2 /* SQLite.framework.dSYM */,
+				03412671206085A500FF8CE2 /* SQLite.framework */,
+				0305DBCD205C456800C8149A /* BitDayWallpaperChanger */,
+				0305DBCC205C456800C8149A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0305DBCC205C456800C8149A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0305DBCB205C456800C8149A /* BitDayWallpaperChanger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0305DBCD205C456800C8149A /* BitDayWallpaperChanger */ = {
+			isa = PBXGroup;
+			children = (
+				0305DBCE205C456800C8149A /* AppDelegate.swift */,
+				0325F3AD205CB8E8002DFF23 /* StatusMenuController.swift */,
+				0305DBD0205C456800C8149A /* Assets.xcassets */,
+				0305DBD2205C456800C8149A /* MainMenu.xib */,
+				0325F3B1205CCB6B002DFF23 /* PreferencesWindow.swift */,
+				0325F3B2205CCB6B002DFF23 /* PreferencesWindow.xib */,
+				0325F3AF205CBDA4002DFF23 /* WallpaperManager.swift */,
+				0305DBD5205C456800C8149A /* Info.plist */,
+				0305DBD6205C456800C8149A /* BitDayWallpaperChanger.entitlements */,
+			);
+			path = BitDayWallpaperChanger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0305DBCA205C456800C8149A /* BitDayWallpaperChanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0305DBD9205C456800C8149A /* Build configuration list for PBXNativeTarget "BitDayWallpaperChanger" */;
+			buildPhases = (
+				0305DBC7205C456800C8149A /* Sources */,
+				0305DBC8205C456800C8149A /* Frameworks */,
+				0305DBC9205C456800C8149A /* Resources */,
+				03412674206085A500FF8CE2 /* Embed Frameworks */,
+				03412675206085C700FF8CE2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitDayWallpaperChanger;
+			productName = BitDayWallpaperChanger;
+			productReference = 0305DBCB205C456800C8149A /* BitDayWallpaperChanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0305DBC3205C456800C8149A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Josh;
+				TargetAttributes = {
+					0305DBCA205C456800C8149A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0305DBC6205C456800C8149A /* Build configuration list for PBXProject "BitDayWallpaperChanger" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0305DBC2205C456800C8149A;
+			productRefGroup = 0305DBCC205C456800C8149A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0305DBCA205C456800C8149A /* BitDayWallpaperChanger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0305DBC9205C456800C8149A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0305DBD1205C456800C8149A /* Assets.xcassets in Resources */,
+				0325F3B4205CCB6B002DFF23 /* PreferencesWindow.xib in Resources */,
+				0305DBD4205C456800C8149A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0305DBC7205C456800C8149A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0325F3B3205CCB6B002DFF23 /* PreferencesWindow.swift in Sources */,
+				0325F3AE205CB8E8002DFF23 /* StatusMenuController.swift in Sources */,
+				0325F3B0205CBDA4002DFF23 /* WallpaperManager.swift in Sources */,
+				0305DBCF205C456800C8149A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0305DBD2205C456800C8149A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0305DBD3205C456800C8149A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0305DBD7205C456800C8149A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0305DBD8205C456800C8149A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		0305DBDA205C456800C8149A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitDayWallpaperChanger/BitDayWallpaperChanger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U3L5DFTM58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = BitDayWallpaperChanger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joshlin.BitDayWallpaperChanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		0305DBDB205C456800C8149A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitDayWallpaperChanger/BitDayWallpaperChanger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U3L5DFTM58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = BitDayWallpaperChanger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.joshlin.BitDayWallpaperChanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0305DBC6205C456800C8149A /* Build configuration list for PBXProject "BitDayWallpaperChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0305DBD7205C456800C8149A /* Debug */,
+				0305DBD8205C456800C8149A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0305DBD9205C456800C8149A /* Build configuration list for PBXNativeTarget "BitDayWallpaperChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0305DBDA205C456800C8149A /* Debug */,
+				0305DBDB205C456800C8149A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0305DBC3205C456800C8149A /* Project object */;
+}

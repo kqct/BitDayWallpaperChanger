@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BitDayWallpaperChanger" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="mUm-sf-QIF" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="BitDayWallpaperChanger" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="N92-nn-unk" id="5JP-Gh-6wj"/>
+            </connections>
+        </customObject>
+        <menu id="N92-nn-unk">
+            <items>
+                <menuItem title="Update" id="kCs-RR-11u">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateClicked:" target="mUm-sf-QIF" id="87k-Dj-4xx"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="MS3-bS-qVA"/>
+                <menuItem title="Preferences..." id="UYD-J9-Zaf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="preferencesClicked:" target="mUm-sf-QIF" id="vv4-Sl-oux"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="4zR-cR-5fW"/>
+                <menuItem title="Quit" id="IwN-3C-qKQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="mUm-sf-QIF" id="Qno-tk-wXL"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
